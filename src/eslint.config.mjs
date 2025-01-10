@@ -8,7 +8,7 @@ import format from './eslint/format.mjs';
 import hooks from './eslint/hooks.mjs';
 import types from './eslint/types.mjs';
 
-export default [{
+const eslint = [{
     files: ['**/*.{js,jsx,mjs,ts,tsx}'],
     ignores: [],
     languageOptions: {
@@ -41,3 +41,5 @@ export default [{
         ...hooks,
     },
 }];
+
+export default eslint;

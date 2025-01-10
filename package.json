@@ -1,10 +1,7 @@
 {
     "name": "@aephonics/config",
-    "version": "24.12.1",
-    "description": "Web development configuration files.",
-    "keywords": [
-        "eslint"
-    ],
+    "version": "25.1.10",
+    "description": "Web development configurations.",
     "license": "MIT",
     "author": "Kevin Huang",
     "main": "index.mjs",
@@ -14,14 +11,13 @@
     },
     "dependencies": {
         "@stylistic/eslint-plugin": "latest",
-        "eslint": "latest",
         "eslint-plugin-astro": "latest",
         "eslint-plugin-jsx-a11y": "latest",
         "eslint-plugin-react-hooks": "latest",
+        "eslint": "latest",
         "typescript-eslint": "latest"
     },
     "devDependencies": {
-        "@types/bun": "latest",
-        "npm": "latest"
+        "@types/bun": "latest"
     }
 }

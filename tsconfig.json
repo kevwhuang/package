@@ -71,7 +71,7 @@
         "verbatimModuleSyntax": true,
         "maxNodeModuleJsDepth": 0,
         "baseUrl": "./",
-        "declarationDir": "./types",
+        "declarationDir": "dist",
         "generateCpuProfile": "cpuprofile",
         "jsx": "react-jsx",
         "jsxImportSource": "react",
@@ -83,11 +83,14 @@
         "rootDir": ".",
         "target": "esnext",
         "lib": [
-            "dom",
             "dom.iterable",
+            "dom",
             "esnext",
             "scripthost",
             "webworker",
+        ],
+        "types": [
+            "bun-types",
         ],
     },
 }
