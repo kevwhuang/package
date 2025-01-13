@@ -1,11 +1,13 @@
 import globals from 'globals';
 import pluginHooks from 'eslint-plugin-react-hooks';
+import pluginReact from 'eslint-plugin-react';
 import stylistic from '@stylistic/eslint-plugin';
 import tslint from 'typescript-eslint';
 
 import base from './eslint/base.mjs';
 import format from './eslint/format.mjs';
 import hooks from './eslint/hooks.mjs';
+import react from './eslint/react.mjs';
 import types from './eslint/types.mjs';
 
 const eslint = [{
@@ -31,14 +33,21 @@ const eslint = [{
     },
     plugins: {
         '@hooks': pluginHooks,
+        '@react': pluginReact,
         '@stylistic': stylistic,
         '@tslint': tslint.plugin,
     },
     rules: {
         ...base,
         ...format,
-        ...types,
+        ...react,
         ...hooks,
+        ...types,
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
     },
 }];
 

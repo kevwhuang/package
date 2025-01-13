@@ -1,3 +1,3 @@
 # @aephonics/config
 
-eslint
+ESLint
