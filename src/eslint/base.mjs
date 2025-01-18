@@ -1,4 +1,4 @@
-export default {
+const rules = {
     'accessor-pairs': 2,
     'array-callback-return': 2,
     'arrow-body-style': 2,
@@ -197,3 +197,5 @@ export default {
     'vars-on-top': 2,
     'yoda': [2, 'never', { exceptRange: true }],
 };
+
+export default rules;
