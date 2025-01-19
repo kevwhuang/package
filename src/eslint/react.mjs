@@ -102,4 +102,4 @@ const rules = {
     'void-dom-elements-no-children': 2,
 };
 
-export default Object.fromEntries(Object.entries(rules).map(e => [`@react/${e[0]}`, e[1]]));
+export default Object.fromEntries(Object.entries(rules).map(e => [`react/${e[0]}`, e[1]]));

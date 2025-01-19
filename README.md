@@ -1,4 +1,5 @@
 # @aephonics/config
 
 ESLint
+
 Prettier

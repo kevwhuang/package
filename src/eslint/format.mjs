@@ -37,7 +37,7 @@ const rules = {
     'jsx-pascal-case': [2, { allowAllCaps: true }],
     'jsx-props-no-multi-spaces': 2,
     'jsx-quotes': 2,
-    'jsx-self-closing-comp': 2,
+    'jsx-self-closing-comp': 0,
     'jsx-sort-props': [2, { callbacksLast: true, reservedFirst: true }],
     'jsx-tag-spacing': [2, { beforeClosing: 'never' }],
     'jsx-wrap-multilines': [2, { declaration: 'parens-new-line', return: 'parens-new-line' }],
@@ -96,4 +96,4 @@ const rules = {
     'yield-star-spacing': 2,
 };
 
-export default Object.fromEntries(Object.entries(rules).map(e => [`@stylistic/${e[0]}`, e[1]]));
+export default Object.fromEntries(Object.entries(rules).map(e => [`stylistic/${e[0]}`, e[1]]));

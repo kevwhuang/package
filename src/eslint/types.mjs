@@ -50,6 +50,7 @@ const rules = {
     'no-meaningless-void-operator': 2,
     'no-misused-new': 2,
     'no-misused-promises': 2,
+    'no-misused-spread': 2,
     'no-mixed-enums': 2,
     'no-namespace': 2,
     'no-non-null-asserted-nullish-coalescing': 2,
@@ -124,4 +125,4 @@ const rules = {
     'use-unknown-in-catch-callback-variable': 2,
 };
 
-export default Object.fromEntries(Object.entries(rules).map(e => [`@tslint/${e[0]}`, e[1]]));
+export default Object.fromEntries(Object.entries(rules).map(e => [`tslint/${e[0]}`, e[1]]));
