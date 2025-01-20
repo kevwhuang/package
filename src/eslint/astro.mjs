@@ -1,4 +1,9 @@
+import accessibility from './a11y.mjs';
+
+const fn = e => [`astro/${e[0].startsWith('a11y') ? 'jsx-' : ''}${e[0]}`, e[1]];
+
 const rules = {
+    ...accessibility,
     'missing-client-only-directive-value': 2,
     'no-conflict-set-directives': 2,
     'no-deprecated-astro-canonicalurl': 2,
@@ -18,4 +23,4 @@ const rules = {
     'valid-compile': 2,
 };
 
-export default Object.fromEntries(Object.entries(rules).map(e => [`astro/${e[0]}`, e[1]]));
+export default Object.fromEntries(Object.entries(rules).map(fn));

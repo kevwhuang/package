@@ -37,4 +37,4 @@ const rules = {
     'tabindex-no-positive': 2,
 };
 
-export default Object.fromEntries(Object.entries(rules).map(e => [`astro/jsx-a11y/${e[0]}`, e[1]]));
+export default Object.fromEntries(Object.entries(rules).map(e => [`a11y/${e[0]}`, e[1]]));

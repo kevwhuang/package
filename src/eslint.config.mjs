@@ -1,11 +1,12 @@
 import globals from 'globals';
+import pluginA11y from 'eslint-plugin-jsx-a11y';
 import pluginAstro from 'eslint-plugin-astro';
 import pluginHooks from 'eslint-plugin-react-hooks';
 import pluginReact from 'eslint-plugin-react';
 import stylistic from '@stylistic/eslint-plugin';
 import tslint from 'typescript-eslint';
 
-import accessibility from './eslint/accessibility.mjs';
+import a11y from './eslint/a11y.mjs';
 import astro from './eslint/astro.mjs';
 import base from './eslint/base.mjs';
 import format from './eslint/format.mjs';
@@ -16,7 +17,7 @@ import types from './eslint/types.mjs';
 const eslint = [
     ...pluginAstro.configs.base,
     {
-        files: ['**/*.{js,jsx,mjs,ts,tsx}'],
+        files: ['**/*.{js,mjs,ts,tsx}'],
         ignores: null,
         languageOptions: {
             ecmaVersion: 'latest',
@@ -38,22 +39,40 @@ const eslint = [
         },
         name: 'aephonics/base',
         plugins: {
-            hooks: pluginHooks,
-            react: pluginReact,
             stylistic,
-            tslint: tslint.plugin,
         },
         rules: {
             ...base,
             ...format,
+        },
+    },
+    {
+        files: ['**/*.tsx'],
+        name: 'aephonics/jsx',
+        plugins: {
+            a11y: pluginA11y,
+            hooks: pluginHooks,
+            react: pluginReact,
+        },
+        rules: {
             ...react,
             ...hooks,
-            ...types,
+            ...a11y,
         },
         settings: {
             react: {
                 version: 'detect',
             },
+        },
+    },
+    {
+        files: ['**/*.{ts,tsx}'],
+        name: 'aephonics/typescript',
+        plugins: {
+            tslint: tslint.plugin,
+        },
+        rules: {
+            ...types,
         },
     },
     {
@@ -66,7 +85,6 @@ const eslint = [
             ...base,
             ...format,
             ...astro,
-            ...accessibility,
         },
     },
 ];
