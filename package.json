@@ -1,7 +1,7 @@
 {
     "name": "@aephonics/config",
-    "version": "25.1.20",
-    "description": "Web development configurations.",
+    "version": "25.1.25",
+    "description": "Web development configs",
     "license": "MIT",
     "author": "Kevin Huang",
     "main": "index.mjs",
@@ -13,7 +13,6 @@
         "lint": "bun tsc & bun eslint"
     },
     "dependencies": {
-        "@aephonics/config": "latest",
         "@stylistic/eslint-plugin": "latest",
         "@types/bun": "latest",
         "@types/react": "latest",
@@ -25,5 +24,7 @@
         "typescript": "latest",
         "typescript-eslint": "latest"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "@aephonics/config": "latest"
+    }
 }

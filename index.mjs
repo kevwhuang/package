@@ -1,5 +1,5 @@
-import eslint from './src/eslint.config.mjs';
-import prettier from './src/prettier.config.mjs';
+import eslint from './src/eslint.mjs';
+import prettier from './src/prettier.mjs';
 
 export {
     eslint,

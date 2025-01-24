@@ -2,7 +2,7 @@ import { eslint } from '@aephonics/config';
 
 const overrides = [
     {
-        files: ['**/*.{ts,tsx,astro}'],
+        files: ['**/*.mjs'],
         languageOptions: {
             globals: {},
         },
