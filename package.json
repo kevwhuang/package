@@ -1,7 +1,7 @@
 {
     "name": "@aephonics/config",
-    "version": "25.1.25",
-    "description": "Web development configs",
+    "version": "25.2.5",
+    "description": "Web development configs.",
     "license": "MIT",
     "author": "Kevin Huang",
     "main": "index.mjs",

@@ -58,7 +58,7 @@ const rules = {
     'no-extra-parens': [2, 'functions'],
     'no-extra-semi': 2,
     'no-floating-decimal': 2,
-    'no-mixed-operators': 2,
+    'no-mixed-operators': 0,
     'no-mixed-spaces-and-tabs': 2,
     'no-multi-spaces': 2,
     'no-multiple-empty-lines': [2, { max: 1 }],

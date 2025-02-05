@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "declarationDir": null,
         "allowArbitraryExtensions": true,
         "allowImportingTsExtensions": true,
         "allowJs": true,
@@ -70,8 +71,7 @@
         "useUnknownInCatchVariables": true,
         "verbatimModuleSyntax": true,
         "maxNodeModuleJsDepth": 0,
-        "baseUrl": "./",
-        "declarationDir": null,
+        "baseUrl": ".",
         "generateCpuProfile": "cpuprofile",
         "jsx": "react-jsx",
         "jsxImportSource": "react",
@@ -89,9 +89,9 @@
             "scripthost",
             "webworker",
         ],
-        "paths": {},
         "types": [
             "bun-types",
         ],
+        "paths": {},
     },
 }
